@@ -1,0 +1,11 @@
+
+version: '3.8'
+
+services:
+  arepas-form:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    container_name: arepas_form_container
